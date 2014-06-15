@@ -80,4 +80,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_url_options = { :host => 'omfg-firstapp.herokuapp.com' }
+  # required for heroku
+  # Note to set this to my actual host
+
 end
